@@ -28,11 +28,11 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply_phtoto(
+        await message.reply(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
         return ""
-    status = await message.reply_phtoto(
+    status = await message.reply(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
     video_link = yt_search(args)
@@ -69,11 +69,11 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "music"
     if args.startswith(" "):
-        await message.reply_phtoto(
+        await message.reply(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
         return ""
-    status = await message.reply_phtoto(
+    status = await message.reply(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
     video_link = yt_search(args)
@@ -110,13 +110,13 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "s"
     if args.startswith(" "):
-        await message.reply_phtoto(
+        await message.reply(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
         return ""
-    status = await message.reply_phtoto(
-               Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
-               caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
+    status = await message.reply(
+             Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
+             caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
     video_link = yt_search(args)
     if not video_link:
         await status.edit("✖️ 𝐅𝐨𝐮𝐧𝐝 𝐍𝐨𝐭𝐡𝐢𝐧𝐠. 𝐒𝐨𝐫𝐫𝐲.\n\n𝐓𝐫𝐲 𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐊𝐞𝐲𝐰𝐨𝐫𝐤 𝐎𝐫 𝐌𝐚𝐲𝐛𝐞 𝐒𝐩𝐞𝐥𝐥 𝐈𝐭 𝐏𝐫𝐨𝐩𝐞𝐫𝐥𝐲.\n\nEg.`/song Faded`")
