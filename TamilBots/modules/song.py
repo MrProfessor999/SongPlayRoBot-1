@@ -32,7 +32,7 @@ async def song(client, message):
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
         return ""
-    status = await message.message.reply_phtoto(
+    status = await message.reply_phtoto(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
     video_link = yt_search(args)
