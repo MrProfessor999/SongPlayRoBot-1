@@ -60,7 +60,7 @@ you can also use inline for search YouTube video or song
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Support📕', url=f"https://telegram.me/{Config.SUPPORT}"), 
+        InlineKeyboardButton('Support📕', url=f"https://telegram.me/EDIT_REPO"), 
         InlineKeyboardButton(text="SEARCH🔎", switch_inline_query_current_chat="")
         ],[
         InlineKeyboardButton('HELPℹ️', callback_data ='cmds'),        
