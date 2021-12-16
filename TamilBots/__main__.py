@@ -15,7 +15,7 @@ Iam a song download Bot 🙂
 """
 
 CMDS_TEXT = """
-Hey {} This are this bots power🌠
+Hey {} This are this bots power🙂
 """
 
 ABOUT_TEXT = """
@@ -39,11 +39,6 @@ You can also use these commands
 ➩/m
 """
  
-VSONG = """ **📀VSONG📀**
-You can also use this feature in group too
-➩ /vsong <songname artist(optional)>: uploads the video song in it's best quality available
-➩ /video <songname artist(optional)>: uploads the video song in it's best quality available
-"""
   
 LYRICS = """ **🎶LYRICS🎶**
 You can also use this feature in group too
@@ -51,9 +46,6 @@ You can also use this feature in group too
 """
 
 YOUTUBE = """  **📽️YOUTUBE📽️**
-You can also use this feature in group too
-➩ /ytaudio <youtubelink>: uploads the audio of song in it's best quality available
-➩ /ytvideo <youtubelink>: uploads the video of song in it's best quality available
 you can also use inline for search YouTube video or song
 """
 
@@ -136,13 +128,7 @@ async def cb_handler(bot, update):
             text=MUSIC,
             reply_markup=MUSIC_BUTTON,
             disable_web_page_preview=True
-        )
-    elif update.data == "video":
-        await update.message.edit_text(
-            text=VSONG,
-            reply_markup=VSONG_BUTTON,
-            disable_web_page_preview=True
-        )
+        )    
     elif update.data == "lyrics":
         await update.message.edit_text(
             text=LYRICS,
