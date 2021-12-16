@@ -69,7 +69,7 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "music"
     if args.startswith(" "):
-        await message.message.reply_phtoto(
+        await message.reply_phtoto(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
         return ""
@@ -110,7 +110,7 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "s"
     if args.startswith(" "):
-        await message.message.reply_phtoto(
+        await message.reply_phtoto(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
         return ""
