@@ -1,3 +1,20 @@
+import yt_dlp
+from yt_dlp import YoutubeDL
+from youtube_search import YoutubeSearch
+from pyrogram import Client, filters
+from youtube_search import YoutubeSearch
+from pytube import YouTube
+from youtubesearchpython import VideosSearch
+from youtubesearchpython import SearchVideos
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, InlineQuery, InlineQueryResultArticle, InputTextMessageContent
+from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
+
+
+
+
+
+
 @Bot.on_inline_query()
 async def inline(client: Client, query: InlineQuery):
     answers = []
