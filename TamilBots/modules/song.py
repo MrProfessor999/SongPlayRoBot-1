@@ -28,11 +28,11 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply(
+        await reply_photo(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
         return ""
-    status = await message.reply(
+    status = await reply_photo(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
     video_link = yt_search(args)
@@ -69,11 +69,11 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "music"
     if args.startswith(" "):
-        await message.reply(
+        await reply_photo(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
         return ""
-    status = await message.reply(
+    status = await reply_photo(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
     video_link = yt_search(args)
@@ -110,11 +110,11 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "s"
     if args.startswith(" "):
-        await message.reply(
+        await reply_photo(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
                caption="Enter a song name. `/song hope`")
         return ""
-    status = await message.reply(
+    status = await reply_photo(
              Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
              caption="🚀 🔎 🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 𝐭𝐡𝐞 𝐬𝐨𝐧𝐠... 🎶 𝐏𝐥𝐞𝐚𝐬𝐞 𝐖𝐚𝐢𝐭 ⏳️ 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐒𝐞𝐜𝐨𝐧𝐝𝐬")
     video_link = yt_search(args)
