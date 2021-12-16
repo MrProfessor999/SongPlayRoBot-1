@@ -112,7 +112,7 @@ async def song(client, message):
     if args.startswith(" "):
         await message.message.reply_phtoto(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg"
-               caption=Enter a song name. `/song hope`)
+               caption="Enter a song name. `/song hope`")
         return ""
     status = await message.reply_phtoto(
                Photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
