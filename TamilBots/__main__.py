@@ -55,14 +55,15 @@ START_BUTTONS = InlineKeyboardMarkup(
         InlineKeyboardButton('Support📕', url=f"https://telegram.me/EDIT_REPO"), 
         InlineKeyboardButton(text="SEARCH🔎", switch_inline_query_current_chat="")
         ],[
+        InlineKeyboardButton(text="➕⚡Add ME TO YOUR GROUP⚡➕", url="t.me/MAKRI_SONGBOT?startgroup=true"), 
+        ],[     
         InlineKeyboardButton('HELPℹ️', callback_data ='cmds'),        
         InlineKeyboardButton('ABOUT😁', callback_data='about')        
         ]]
     )
 CMDS_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('🎧MUSIC🎧', callback_data='song'),
-        InlineKeyboardButton('📀VSONG📀', callback_data='video')
+        InlineKeyboardButton('🎧MUSIC🎧', callback_data='song'),        
         ],[
         InlineKeyboardButton('🎶LYRICS🎶', callback_data='lyrics'),
         InlineKeyboardButton('📽️YOUTUBE📽️', callback_data='youtube')
