@@ -36,7 +36,6 @@ You can also use this feature in group too
 You can also use these commands
 ➩/song
 ➩/s
-➩/m
 """
  
   
