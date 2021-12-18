@@ -148,16 +148,16 @@ async def cb_handler(bot, update):
         
 @Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):    
-    await update.reply_photo(
-        photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
+    await update.reply_video(
+        video="https://telegra.ph/file/64a453d2da40461767d22.mp4",
         caption=START_TEXT.format(update.from_user.mention),            
         reply_markup=START_BUTTONS
     )
 
 @Bot.on_message(filters.private & filters.command(["about"]))
 async def about(bot, update):
-    await update.reply_photo(
-        photo="https://telegra.ph/file/a9522ca5294a086a5dbe8.jpg",
+    await update.reply_video(
+        video="https://telegra.ph/file/64a453d2da40461767d22.mp4",
         caption=ABOUT_TEXT,        
         reply_markup=ABOUT_BUTTONS
     )
